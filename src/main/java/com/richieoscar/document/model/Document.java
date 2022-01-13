@@ -3,6 +3,7 @@ package com.richieoscar.document.model;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "document")
 public class Document {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

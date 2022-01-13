@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>HomePage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<h1> Document Hub</h1>
-<h3>Upload your Document to secure location</h3>
+<div class="container">
+    <div class="row p-4">
+        <div class="col text-center ">
+            <h1 class="text-primary p-3"> Document Hub</h1>
+            <br/>
+            <h3 class="h3 display-4" >Upload your Document to secure location</h3>
+        </div>
+
+    </div>
+    <br/>
+    <br/>
+    <div class="row p-5">
+        <div class="col">
+            <h1 class="h1 text-center p-5 rounded bg-primary"><a class="text-white text-decoration-none"
+                                                                 th:href="@{'/showUpload'}">Click here to Upload a
+                File<a/></h1>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>

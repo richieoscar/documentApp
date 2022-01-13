@@ -19,6 +19,12 @@ public class DocumentController {
     @Autowired
     private DocumentRepository repository;
 
+
+    @GetMapping("/login")
+    public String showLogin(){
+        return "login";
+    }
+
     @PostMapping("/upload")
     public String upload(@RequestParam("document") MultipartFile file, @RequestParam("description") String description, Model model) {
         Document document = new Document();
@@ -43,6 +49,11 @@ public class DocumentController {
     public String showUpload(Model model) {
         saveAndGet(model, "documents");
         return "showUpload";
+    }
+
+    @RequestMapping("/home")
+    public String home(){
+        return "index";
     }
 
     @GetMapping("/download")
