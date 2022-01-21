@@ -34,18 +34,18 @@ public class ApplicationUserDaoImpl implements ApplicationUserDao{
                         "richieoscar",
                         passwordEncoder.encode("password"),
                         ADMIN.getAuthorities(),
-                        false,
                         true,
-                        false,
+                        true,
+                        true,
                         true),
                 new ApplicationUser(
                         "alex",
                         passwordEncoder.encode("password"),
                         USER.getAuthorities(),
-                        false,
-                        false,
-                        false,
-                        false)
+                        true,
+                        true,
+                        true,
+                        true)
 
         );
         return users;
